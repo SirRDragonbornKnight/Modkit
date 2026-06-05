@@ -36,6 +36,7 @@ for everything (models, **Add model…**, express, size, settings, quit). Launch
 
 - Portable **Node v24** (`%LOCALAPPDATA%\node-portable`) + Electron are already installed — **no admin**.
   First launch runs `npm install` (electron + three + three-vrm) locally. **Never use a winget MSI** (needs admin).
+- **Electron's binary** (~100 MB) is fetched during that first `npm install` and needs internet once. Behind a proxy/firewall it can silently skip (you'll get no `node_modules/electron/dist/electron.exe`) — point it at a mirror: `set ELECTRON_MIRROR=https://github.com/electron/electron/releases/download/` (or your org's), then re-run `npm install`.
 - **left-drag** move · scroll or **+/-** resize (**0** resets) · **Ctrl+Alt+Q** quit · **Ctrl+Alt+A** force click-through · **H** info panel.
 
 ## Add / swap models
